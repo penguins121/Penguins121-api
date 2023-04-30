@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penguins121.Domain", "Pengu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penguins121.Data", "Penguins121.Data\Penguins121.Data.csproj", "{91295877-DC82-4BE4-9E98-50A9A3EB97BA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C2D79A23-7C3D-4275-A5DB-05DFFB4DB07E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penguins121.Domain.Tests", "tests\Penguins121.Domain.tests\Penguins121.Domain.Tests.csproj", "{7C1A9157-8F8E-42DC-ABBE-17943CFE015D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{91295877-DC82-4BE4-9E98-50A9A3EB97BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91295877-DC82-4BE4-9E98-50A9A3EB97BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91295877-DC82-4BE4-9E98-50A9A3EB97BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1A9157-8F8E-42DC-ABBE-17943CFE015D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1A9157-8F8E-42DC-ABBE-17943CFE015D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1A9157-8F8E-42DC-ABBE-17943CFE015D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1A9157-8F8E-42DC-ABBE-17943CFE015D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C1A9157-8F8E-42DC-ABBE-17943CFE015D} = {C2D79A23-7C3D-4275-A5DB-05DFFB4DB07E}
 	EndGlobalSection
 EndGlobal
