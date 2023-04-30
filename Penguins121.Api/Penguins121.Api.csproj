@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Penguins121.Domain\Penguins121.Domain.csproj" />
+    <ProjectReference Include="..\Penguins121.Data\Penguins121.Data.csproj" />
   </ItemGroup>
 
 </Project>
