@@ -65,6 +65,7 @@ namespace Penguins121.Api.Controllers{
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(delete:catalog)]
         public IActionResult Delete(int id){
             var item = _db.Items.Find(id);
             if(item == null)
