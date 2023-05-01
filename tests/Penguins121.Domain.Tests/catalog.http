@@ -1,0 +1,10 @@
+### GET token from Auth0
+curl --request POST \
+  --url https://dev-s0bzerk452prlznx.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"0UuQ91rxTAFLP5x5ViQq9N6Gn08GhwMQ","client_secret":"9Vx2sHOEqzYoepuE3hMxEV4qvPJhZ16wx8MDJw12ZIsgqLGMT7vFDeUJIqaNyA8G","audience":"https://Penguins121","grant_type":"client_credentials"}'
+
+### DELETE an Item to the Catalog collection
+curl --response DELETE \
+    --url https://localhost:5251/catalog/3 \
+    --header 'authorization: Bearer {eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImRFZU1RS0lQb0NrNEpjT3NzUnZqYSJ9.eyJpc3MiOiJodHRwczovL2Rldi13YzBsZnl6NWR5Z2NtczB5LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiIyUlU4WVlzRUlYQXNEMG5VMGp2ZEZqZ0pDMzBET2huZUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9kZWNpc2l2ZS13aXphcmQiLCJpYXQiOjE2ODIzODQ4MjYsImV4cCI6MTY4MjQ3MTIyNiwiYXpwIjoiMlJVOFlZc0VJWEFzRDBuVTBqdmRGamdKQzMwRE9obmUiLCJzY29wZSI6ImRlbGV0ZTpjYXRhbG9nIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.MWIJofbp4CEmN9RRPyWqKMA-lYX_n0SEszcEnHBix6Cian3NoSyxOun7elDVDUqn38XHdG8PCOWTPLBITuCylWuZXbVcVYGC_ReUaqv76JZW2VOrrp5Z1fEXsLSw98oAW-Ms8cB9Co1uDam_JOw6U059vHVr7GWtGyiIEGTzFmqbnZtfUGEr3hxPXHiMHJS3DNt9akI2p05Ql5iCOT9KWRCdMhbVrPNLWalm2_IcjrzViD6hww3IyK2wOoGXtNPoLPVTjURx5ccgKo61snDRYB3i0eDXrZG7LyqALw8tdEXlCIhOVmUcn374b6p051V3UN4rl2jiWCHi5E2wEsTCZw}'

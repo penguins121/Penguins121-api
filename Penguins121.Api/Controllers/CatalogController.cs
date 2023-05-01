@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Penguins121.Domain.Catalog;
 using Penguins121.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Penguins121.Api.Controllers{
     [ApiController]
@@ -65,7 +66,7 @@ namespace Penguins121.Api.Controllers{
         }
 
         [HttpDelete("{id:int}")]
-        [Authorize(delete:catalog)]
+        [Authorize("delete:catalog")]
         public IActionResult Delete(int id){
             var item = _db.Items.Find(id);
             if(item == null)
